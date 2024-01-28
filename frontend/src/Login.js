@@ -12,6 +12,7 @@ import {auth} from './firebase/setup'
 function Login(){
 
 
+
     const [phone,setphone] = useState("")
     const [user,setuser] = useState(null)
     const [otp,setotp] = useState("")
@@ -47,8 +48,8 @@ function Login(){
 
 
     return(
-        <>
-        {/* Bootstrap */}
+        <div style={{backgroundColor:'white', width:'100vmax', height:'100vmax'  }}>
+        
             <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
         rel="stylesheet"
@@ -61,7 +62,19 @@ function Login(){
         rel="stylesheet"
         />
          {/* Bootstrap */}
+         <div className="otp-container">
         <div className="otp-login">
+        <div className="mb-3">
+            <label htmlFor="exampleFormControlInput1" className="form-label">
+            
+        </label>
+        <input
+        type="number"
+        className="form-control"
+        id="exampleFormControlInput1"
+        placeholder="enter Voter Id"
+            />
+            </div>
             <div className="login-content">
             <PhoneInput
             country={'us'}
@@ -69,10 +82,11 @@ function Login(){
             onChange={(phone)=>setphone("+" +phone)}
         />
         <br></br>
-        <button onClick={sendOtp} className="button" sx={{marginTop:"10px"}} >Send Otp</button>
+        <button onClick={sendOtp} className="button border-2 rounded-10" sx={{marginTop:"10px"}} >Send Otp</button>
             </div>
             <br></br>
-            <div id="recaptcha" ></div>
+            
+            <div id="recaptcha" style={{}} ></div>
             <div className="mb-3">
             <label htmlFor="exampleFormControlInput1" className="form-label">
             
@@ -89,7 +103,8 @@ function Login(){
             <button onClick={VerifyOtp} className="button"  >Verify Otp</button>
             </div>
         </div>
-        </>
+        </div>
+        </div>
     )
 }
 

@@ -1,10 +1,31 @@
+
 .otp-login{
     position:absolute;
-    top: 30%;
+    
+    top: 25%;
     left: 40%;
+}
+.otp-container{
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    padding-top: 60px;
+    background-color: rgb(144, 83, 83) ;
 }
 .button {
     background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.button:hover {
+    background-color: #068859; /* Green */
     border: none;
     color: white;
     padding: 15px 32px;
@@ -17,4 +38,16 @@
 }
 .login-content{
     text-align: center;
+}
+.recaptcha{
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
