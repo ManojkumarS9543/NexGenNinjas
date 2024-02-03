@@ -48,7 +48,7 @@ function Login(){
 
 
     return(
-        <div style={{backgroundColor:'white', width:'100vmax', height:'100vmax'  }}>
+        <>
         
             <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -62,6 +62,7 @@ function Login(){
         rel="stylesheet"
         />
          {/* Bootstrap */}
+        <div className="submanin">
          <div className="otp-container">
         <div className="otp-login">
         <div className="mb-3">
@@ -105,6 +106,7 @@ function Login(){
         </div>
         </div>
         </div>
+        </>
     )
 }
 
